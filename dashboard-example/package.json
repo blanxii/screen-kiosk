@@ -1,0 +1,45 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "develop": "nodemon index.js",
+    "deploy": "git pull origin master && npm i && npm run server",
+    "server": "pm2 startOrReload config/pm2/production.json",
+    "logs": "pm2 logs"
+  },
+  "babel": {
+    "only": [
+      "server/**"
+    ],
+    "presets": [
+      "es2015-node4"
+    ],
+    "plugins": [
+      "transform-es2015-arrow-functions"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "babel-register": "^6.11.6",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "express-nunjucks": "^2.2.3",
+    "express-validation": "^1.0.0",
+    "joi": "^9.0.4",
+    "mysql": "^2.14.1",
+    "node-cron": "^1.2.1",
+    "nunjucks": "^3.0.1",
+    "sequelize": "^4.10.3",
+    "simple-di": "^1.1.1",
+    "socket.io": "^2.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
