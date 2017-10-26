@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+      html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      div {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        top: 0;
+      }
+
+      #content {
+      }
+
+      #widgets {
+        position: absolute;
+        z-index: 1;
+      }
+
+  </style>
+  <body>
+    <div id="content">hola</div>
+    <div id="widgets"></div>
+  </body>
+</head>
+<body>
+  <script src="./socket.io.js"></script>
+  <script>
+    var socket = io('http://localhost:3000');
+    socket.on('connect', function(data){
+        socket.on('display-html', function(data) {
+            document.getElementById('content').innerHTML = data;
+        });
+
+        socket.on('display-page', function(data) {
+
+        });
+    });
+  </script>
+</body>
+</html>

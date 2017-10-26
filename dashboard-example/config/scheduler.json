@@ -1,0 +1,14 @@
+{
+  "pages": [
+    {
+      "type": "display-html",
+      "duration": 1,
+      "data": "batman.html"
+    },
+    {
+      "type": "controller",
+      "duration": 100,
+      "data": "pipelineController"
+    }
+  ]
+}

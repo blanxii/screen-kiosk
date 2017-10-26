@@ -1,0 +1,18 @@
+{
+  "apps" : [{
+    "name"        : "dashboard",
+    "script"      : "index.js",
+    "instances"   : 0,
+    "exec_mode"   : "cluster",
+    "min_uptime"  : "5000",
+    "node_args"   : "--nouse-idle-notification",
+    "env": {
+      "PORT": "80",
+      "NODE_ENV": "production",
+      "SQL_DATABASE": "dashboard",
+      "SQL_USER": "root",
+      "SQL_PASSWORD": "12345",
+      "SQL_HOST": "localhost"
+    }
+  }]
+}
