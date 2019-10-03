@@ -22,24 +22,27 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
-    "babel-preset-es2015-node4": "^2.1.0",
-    "babel-register": "^6.11.6",
-    "compression": "^1.6.2",
-    "cors": "^2.7.1",
-    "dotenv": "^2.0.0",
-    "express": "^4.14.0",
+    "axios": "^0.19.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-es2015-node4": "^2.1.1",
+    "babel-register": "^6.26.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
     "express-nunjucks": "^2.2.3",
-    "express-validation": "^1.0.0",
-    "joi": "^9.0.4",
-    "mysql": "^2.14.1",
-    "node-cron": "^1.2.1",
-    "nunjucks": "^3.0.1",
-    "sequelize": "^4.10.3",
+    "express-validation": "^1.0.3",
+    "joi": "^14.3.1",
+    "mysql": "^2.17.1",
+    "node-cron": "^2.0.3",
+    "nunjucks": "^3.2.0",
+    "sequelize": "^5.19.2",
     "simple-di": "^1.1.1",
-    "socket.io": "^2.0.3"
+    "socket.io": "^2.3.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "yarn-upgrade-all": "^0.5.2"
+  }
 }
